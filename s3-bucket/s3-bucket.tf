@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "b" {
   bucket = var.bucket_name
 }
 
-resource "aws_s3_bucket_public_access_block" "camel-tf" {
+resource "aws_s3_bucket_public_access_block" "el" {
   bucket = aws_s3_bucket.b.id
 
   block_public_acls       = var.block_public_acls
